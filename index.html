@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>T-POP A rising in popularity</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<ul class="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+			</ul>
+			<div class="connect">
+				<a href="https://www.facebook.com/Tpopstage/" id="facebook">facebook</a> <a href="https://x.com/StageTpop?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" id="twitter">twitter</a>
+			</div>
+			<a href="index.html" id="logo"><img src="images/logo-black.png" style="width: 300px" alt="logo"></a>
+			<div class="featured">
+				<div class="header">
+					<!-- Your existing header content here -->
+				</div>
+				
+				<!-- Insert the new greeting HTML code here -->
+				<div id="greetingContainer" style="text-align: center; margin-top: 30px;">
+					<h2 style="font-size: 32px; color: #5a4271; font-weight: bold; font-family: 'Times New Roman', Times, serif;">Welcome to T-POP!</h2>
+					<p style="font-size: 24px; color: #5a4271; font-family: 'Times New Roman', Times, serif;">What's your name?</p>
+					<input type="text" id="nameInput" placeholder="Enter your name" style="padding: 10px; font-size: 18px; margin-top: 10px;">
+					<button id="greetButton" onclick="greetUser()" style="padding: 10px 20px; font-size: 18px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Greet Me!</button>
+					<p id="greetingMessage" style="font-size: 24px; color: green; font-weight: bold; margin-top: 20px;"></p>
+				</div>
+				<img src="images/alltpop.jpeg" style="margin: auto; margin-bottom: 20px;" alt="">
+			</div>
+		</div>
+
+		
+		<div class="body">
+			<!-- Rest of your body content here -->
+		</div>		
+		<div class="body">
+			<div>
+				<li>
+					<h3 style="font-size: 24px; color:#5a4271; font-weight: bold; font-family: 'Times New Roman', Times, serif;"> Welcome to Lomaban Narsuet's Website</h3>
+						<p style="font-size: 24px; color: #5a4271; margin-bottom: 20px; font-family: 'Times New Roman', Times, serif;">This website is about T-Pop or Thai Pop Music industry and uses a template from www.freewebsitetemplates.com and included features like welcome message, image, CSS styles and have 2 pages.</p>
+				</li>
+			</div>
+			<div>
+				<div>
+					<ul>
+						<li>
+							<a ><img src="images/ab67706c0000da843cdc7045a5b2823cec9306d5.jpeg" style="width: 150px" alt=""></a>
+							<p>
+								
+							</p>
+						</li>
+						<li>
+							<a><img src="images/1716212412_thumpnail.jpg" style="width: 200px" alt=""></a>
+							<p>
+								
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a ><img src="images/012_result.jpg" style="width: 240px" alt=""></a>
+							<p>
+								
+							</p>
+						</li>
+						<li>
+							<a ><img src="images/oYNlLstA9KzEpS8hwWfreEAvBuAcIgCPl3AQOE~tplv-tej9nj120t-origin.webp" style="width: 150px" alt=""></a>
+							<p>
+								
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>T-Pop Updates</h3>
+					<ul>
+						<li>
+							<h4><a >The rise in T-Pop popularity</a></h4>
+							<span>by: T-Pop | Mar. 2, 2024</span>
+							<p>
+								In 2024 T-Pop have become very popular...
+							</p>
+						</li>
+						<li>
+							<h4><a >New T-Pop band called "Dice"</a></h4>
+							<span>by: T-Pop | Mar. 17, 2024</span>
+							<p>
+								Dice, the band from Tada Lable has gained popularity from a TV survival program called 789 Survival...
+							</p>
+						</li>
+						<li>
+							<h4><a >T-Pop and Tiktok trends</a></h4>
+							<span>by: T-Pop | Mar. 21, 2024</span>
+							<p>
+								With recent trends on TikTok featuring many T-Pop dance challenges...
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div class="section">
+					<p>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				&#169; By 23229568 | Lomaban Naruset
+			</p>
+		</div>
+	</div>
+	<script>
+		function greetUser() {
+			// Get the value entered by the user
+			const name = document.getElementById('nameInput').value;
+	
+			// Check if the name is empty
+			if (name.trim() === "") {
+				document.getElementById('greetingMessage').textContent = "Please enter your name!";
+				document.getElementById('greetingMessage').style.color = "red";
+			} else {
+				// Display the personalized greeting message
+				document.getElementById('greetingMessage').textContent = "Hello, " + name + "! Welcome to T-POP!";
+				document.getElementById('greetingMessage').style.color = "green";
+			}
+		}
+	</script>
+</body>
+</html>
